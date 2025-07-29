@@ -1,0 +1,59 @@
+<% layout('/layouts/boilerplate') %>
+
+<h1>Create a New Listing</h1>
+
+<div class="row">
+  <div class="col-8 offset-2">
+<br>
+
+<form method="POST" action="/listings" novalidate class="needs-validation">
+  <!-- Title -->
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input id="title" name="listing[title]" type="text" placeholder="Add a Catchy title" class="form-control w-100" required>
+    <div class="invalid-feedback">Please provide a title.</div>
+  </div>
+
+  <!-- Description -->
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea id="description" name="listing[description]" placeholder="Enter Description" class="form-control w-100" required></textarea>
+    <div class="invalid-feedback">Please provide a description.</div>
+  </div>
+
+  <!-- Image -->
+  <div class="mb-3">
+    <label for="image" class="form-label">Image Link</label>
+    <input id="image" name="listing[image][url]" placeholder="Enter image URL/link" class="form-control w-100" type="url">
+  </div>
+
+  <div class="row">
+    <!-- Price -->
+    <div class="mb-3 col-md-4">
+      <label for="price" class="form-label">Price (₹/night)</label>
+      <input id="price" name="listing[price]" placeholder="Enter price" class="form-control w-100"  required>
+      <div class="invalid-feedback">Please provide a valid price.</div>
+    </div>
+
+    <!-- Country -->
+    <div class="mb-3 col-md-8">
+      <label for="country" class="form-label">Country</label>
+      <input id="country" name="listing[country]" placeholder="India" class="form-control w-100" type="text" required>
+      <div class="invalid-feedback">Please provide a country.</div>
+    </div>
+  </div>
+
+  <!-- Location -->
+  <div class="mb-3">
+    <label for="location" class="form-label">Location</label>
+    <input id="location" name="listing[location]" placeholder="Kota, Rajasthan" class="form-control w-100" type="text" required>
+    <div class="invalid-feedback">Please provide a location.</div>
+  </div>
+
+  <button   type="submit" class="btn btn-dark add-btn">Add</button>
+  <br><br>
+</form>
+  </div>
+</div>
+
+
