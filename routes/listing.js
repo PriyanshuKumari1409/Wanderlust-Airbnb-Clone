@@ -9,11 +9,18 @@ const{isLoggedIn, isOwner,validateListing,validateReview}= require("../middlewar
 
 
 // Index Route:
+<<<<<<< HEAD
 router.get('/', wrapAsync(async (req, res) => {
    const allListings = await Listing.find({});
    console.log("📊 Listings count:", allListings.length); // 👈 ADD THIS
    res.render("listings/index.ejs", { allListings });
 }));
+=======
+router.get('/', wrapAsync(async(req ,res) =>{
+   const allListings=await Listing.find({});
+   res. render("listings/index.ejs" ,{allListings});
+  }));
+>>>>>>> 10f8ac19e0a14f2ec3300301d79a8a56e5ca74ff
 
 
 

@@ -12,7 +12,10 @@
   "dependencies": {
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.7",
+<<<<<<< HEAD
     "dotenv": "^17.4.1",
+=======
+>>>>>>> 10f8ac19e0a14f2ec3300301d79a8a56e5ca74ff
     "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",
     "express": "^5.1.0",
