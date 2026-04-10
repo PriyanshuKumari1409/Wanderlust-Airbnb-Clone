@@ -1,0 +1,17 @@
+
+
+<%- include('../includes/navbar') %>
+
+<h2>My Bookings</h2>
+
+<% bookings.forEach(b => { %>
+  <div class="card mt-3">
+    <div class="card-body">
+      <h4><%= b.listing.title %></h4>
+      <p>From: <%= b.checkIn.toDateString() %></p>
+      <p>To: <%= b.checkOut.toDateString() %></p>
+      <p>Guests: <%= b.guests %></p>
+      <p><strong>Total: ₹ <%= b.totalPrice %></strong></p>
+    </div>
+  </div>
+<% }) %>

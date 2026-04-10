@@ -1,0 +1,16 @@
+<%- include('../includes/navbar') %>
+
+<h2>Book <%= listing.title %></h2>
+
+<form method="POST" action="/listings/<%= listing._id %>/book">
+  <label>Check-in</label>
+  <input type="date" name="checkIn" required>
+
+  <label>Check-out</label>
+  <input type="date" name="checkOut" required>
+
+  <label>Guests</label>
+  <input type="number" name="guests" min="1" required>
+
+  <button class="btn btn-primary">Confirm Booking</button>
+</form>
