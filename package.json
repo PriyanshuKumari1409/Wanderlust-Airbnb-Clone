@@ -1,24 +1,20 @@
 {
   "name": "major_project",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Wanderlust Airbnb Clone",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.7",
-<<<<<<< HEAD
     "dotenv": "^17.4.1",
-=======
->>>>>>> 10f8ac19e0a14f2ec3300301d79a8a56e5ca74ff
     "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",
-    "express": "^5.1.0",
+    "express": "^4.18.2",
     "express-session": "^1.18.2",
     "joi": "^17.13.3",
     "method-override": "^3.0.0",
