@@ -39,6 +39,26 @@ async function main() {
 
     console.log("✅ Connected to MongoDB");
     console.log("🔥 DB NAME:", mongoose.connection.name);
+let port=8080;
+
+// const MONGO_URL="mongodb://127.0.0.1:27017/Wanderlust";
+
+
+const dbUrl = process.env.ATLASDB_URL || "mongodb://127.0.0.1:27017/Wanderlust";
+
+ main()
+ .then(() =>{
+  console.log("Connected to DB");
+ })
+ .catch((err)=>{
+  console.log(err);
+ });
+
+    async function main() {
+      // await mongoose.connect(MONGO_URL);
+
+      await mongoose.connect(dbUrl);
+    };
 
   } catch (err) {
     console.log("❌ DB Connection Error:");
