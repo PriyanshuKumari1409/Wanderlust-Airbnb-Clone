@@ -41,7 +41,7 @@ A full-stack web application inspired by Airbnb that allows users to explore, cr
 ---
 
 ## 🌐 Live Demo
-👉 [Visit Wanderlust – Live Website](https://wanderlust-airbnb-clone-2-orcw.onrender.com/listings)
+👉 [Visit Wanderlust – Live Website](https://wanderlust-airbnb-clone-3.onrender.com)
 
 ---
 
