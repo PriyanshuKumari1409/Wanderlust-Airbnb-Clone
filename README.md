@@ -1,4 +1,4 @@
-# 🏡 Wanderlust – Airbnb Clone
+ # 🏡 Wanderlust – Airbnb Clone
 
 ## 📌 Description
 A full-stack web application inspired by Airbnb that allows users to explore, create, and manage rental listings. Built using Node.js, Express.js, MongoDB, and EJS.
@@ -41,13 +41,14 @@ A full-stack web application inspired by Airbnb that allows users to explore, cr
 ---
 
 ## 🌐 Live Demo
-👉 https://wanderlust-airbnb-clone.onrender.com
+👉 [Visit Wanderlust – Live Website](https://wanderlust-airbnb-clone-2-orcw.onrender.com/listings)
 
 ---
 
 ## 💻 Requirements
 - Node.js  
-- MongoDB  
+- npm
+- MongoDB Atlas
 
 ---
 
@@ -56,6 +57,7 @@ A full-stack web application inspired by Airbnb that allows users to explore, cr
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/PriyanshuKumari1409/Wanderlust-Airbnb-Clone.git
+
 cd Wanderlust-Airbnb-Clone
 ```
 
@@ -64,10 +66,24 @@ cd Wanderlust-Airbnb-Clone
 npm install
 ```
 
-### 3. Run the project 
+### 3. Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+MONGO_URL=your_mongodb_connection_string
+SESSION_SECRET=your_session_secret
+```
+
+### 4. Run the project
+
 ```bash
 node app.js
 ```
+
+The application will be available at:
+
+`http://localhost:8080`
 
 ## 🎯 Usage
 - Browse listings from homepage
@@ -94,6 +110,4 @@ Wanderlust-Airbnb-Clone/
 - Booking system
 - Map integration
 
-## 👨‍💻 Author
-Priyanshu Kumari  
-GitHub: https://github.com/PriyanshuKumari1409
+
